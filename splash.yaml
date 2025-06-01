@@ -1,0 +1,17 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logos/mec-logo.png
+  android: true
+  ios: false
+  web: false
+
+  android_12:
+    image: assets/logos/mec-logo.png
+    icon_background_color: "#FFFFFF"
+    image_dark: assets/logos/mec-logo.png
+    icon_background_color_dark: "#FFFFFF"
+
+  android_gravity: center
+  fullscreen: true
+  image_dark: assets/logos/mec-logo.png
+  color_dark: "#FFFFFF" 
