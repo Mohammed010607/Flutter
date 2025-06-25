@@ -14,22 +14,12 @@ Future<void> signInAnonymously() async {
 }
 
 Future<void> main() async {
-  try {
-    WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
-    await signInAnonymously();
-    
-    final controller = Get.put(BorrowedBooksContoller());
-    controller.checkduedates();
-    
-    runApp(const MyApp());
-  } catch (e) {
-    runApp(MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Cant Start the App: $e'),
-        ),
-      ),
-    ));
-  }
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  await signInAnonymously();
+
+  final controller = Get.put(BorrowedBooksContoller());
+  controller.checkduedates();
+
+  runApp(const MyApp());
 }

@@ -6,7 +6,7 @@ class BorrowedBooksContoller extends GetxController {
 
   void borrowBook(Book book) {
     final borrowdate = DateTime.now();
-    final duedate = borrowdate.add(const Duration(days: 10));
+    final duedate = borrowdate.add(const Duration(days: 14));
     
     final borrowedbook = Book(
       title: book.title, 

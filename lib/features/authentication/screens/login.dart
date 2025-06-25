@@ -99,7 +99,6 @@ class Loginscreen extends StatelessWidget {
                           }
 
                           
-
                           if (emailcontroller.text.isEmpty || passwordcontroller.text.isEmpty){
                             hasEmailError.value = true;
                             emailErrorText.value = "Enter your email";

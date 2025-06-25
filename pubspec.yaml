@@ -33,7 +33,6 @@ flutter:
 #-------------Local Assets-------------#
   assets:
     - assets/logos/
-    - assets/icons/
     - assets/images/
 
 
